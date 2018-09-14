@@ -1,0 +1,1 @@
+include ':examples', ':examples:hellocapture-android', ':examples:hellokapture-android'

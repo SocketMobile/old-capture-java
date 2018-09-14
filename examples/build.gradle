@@ -1,0 +1,11 @@
+subprojects {
+  // Not relevant to sample project
+  if (project.ext.has("captureOmniProject")) {
+    println "CAPTURE OMNI PROJECT: $project"
+    configurations.all {
+      resolutionStrategy.dependencySubstitution {
+        substitute module('com.socketmobile:capture-android') with project(':capture-android')
+      }
+    }
+  }
+}

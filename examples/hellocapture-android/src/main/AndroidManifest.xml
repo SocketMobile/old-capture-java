@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.socketmobile.android.hellocapture"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NonCaptureActivity"
+            android:taskAffinity="" />
+        <activity
+            android:name=".SecondCaptureActivity"
+            android:taskAffinity="" />
+
+        <meta-data
+            android:name="com.socketmobile.capture.APP_KEY"
+            android:value="MC0CFBPgc4u5RXGUAddh+ZlUrriiQID0AhUAx6SisUBSdiZhyWzdVsnWm25FVTA="/>
+        <meta-data
+            android:name="com.socketmobile.capture.DEVELOPER_ID"
+            android:value="BB57D8E1-F911-47BA-B510-693BE162686A"/>
+    </application>
+
+</manifest>
