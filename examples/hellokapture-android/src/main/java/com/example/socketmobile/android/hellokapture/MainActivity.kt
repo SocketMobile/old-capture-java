@@ -1,7 +1,7 @@
 package com.example.socketmobile.android.hellokapture
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import com.socketmobile.capture.android.Capture
 import com.socketmobile.capture.client.DataEvent
